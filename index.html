@@ -1,23 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="./script.js" defer></script>
-  <title>Frontend Mentor | Launch countdown timer</title>
-
-</head>
-<body>
-
-  We're launching soon
-
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./build/tailwind.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Launch countdown timer</title>
+  </head>
+  <body
+    class="flex items-center justify-center flex-col min-h-screen bg-gradient-to-b from-indigo-950 to-violet-900"
+  >
+    <div class="wrapp mx-auto flex flex-col items-center justify-center gap-16">
+      <h1 class="tracking-widest font-bold text-2xl text-slate-200">
+        We're launching soon
+      </h1>
+      <section class="flex items-center gap-5">
+        <div class="time w-24 flex items-center justify-center flex-col gap-4">
+          <div
+            class="days text-rose-400 text-5xl font-bold bg-slate-800 p-5 w-24 h-24 flex items-center justify-center mx-auto rounded-md"
+          >
+            08
+          </div>
+          <span
+            class="text-gray-300 uppercase tracking-widest text-sm font-medium"
+            >Days</span
+          >
+        </div>
+        <div class="time w-24 flex items-center justify-center flex-col gap-4">
+          <div
+            class="hours text-rose-400 text-5xl font-bold bg-slate-800 p-5 w-24 h-24 flex items-center justify-center mx-auto rounded-md"
+          >
+            23
+          </div>
+          <span
+            class="text-gray-300 uppercase tracking-widest text-sm font-medium"
+            >Hours</span
+          >
+        </div>
+        <div class="time w-24 flex items-center justify-center flex-col gap-4">
+          <div
+            class="minutes text-rose-400 text-5xl font-bold bg-slate-800 p-5 w-24 h-24 flex items-center justify-center mx-auto rounded-md"
+          >
+            55
+          </div>
+          <span
+            class="text-gray-300 uppercase tracking-widest text-sm font-medium"
+            >Minutes</span
+          >
+        </div>
+        <div class="time w-24 flex items-center justify-center flex-col gap-4">
+          <div
+            class="seconds text-rose-400 text-5xl font-bold bg-slate-800 p-5 w-24 h-24 flex items-center justify-center mx-auto rounded-md"
+          >
+            41
+          </div>
+          <span
+            class="text-gray-300 uppercase tracking-widest text-sm font-medium"
+            >Seconds</span
+          >
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
